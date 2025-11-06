@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Situs Informasi Upacara - MAN Insan Cendekia Lampung Timur</title>
+  <style>
+    :root{
+      --merah: #b00000;
+      --hitam: #111111;
+      --abu: #f4f4f4;
+      --body-font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --max-width: 980px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:var(--body-font);margin:0;color:#222;background:#fff;line-height:1.45}
+    .container{max-width:var(--max-width);margin:0 auto;padding:20px}
+    header{border-bottom:4px solid var(--merah);padding:18px 0;display:flex;align-items:center;gap:20px}
+    
+    /* Logo container — DIPERBESAR */
+    .logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 10px;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo img {
+      width: 96px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    .site-title{font-size:20px;font-weight:700;color:var(--hitam)}
+    .site-sub{font-size:13px;color:#444;margin-top:4px}
+    nav{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .nav-link{background:var(--hitam);color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px}
+    .hero{background:linear-gradient(90deg, rgba(176,0,0,0.06), rgba(17,17,17,0.03));padding:18px;border-radius:8px;margin:18px 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+      nav{justify-content:flex-start}
+      .logo{width:72px;height:72px}
+    }
+    @media(max-width:600px){
+      .logo{width:64px;height:64px}
+      .logo img{width:64px}
+    }
+    .card{background:#fff;border:1px solid #e6e6e6;padding:14px;border-radius:8px}
+    h2{margin:6px 0 10px 0;color:var(--hitam)}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border:1px solid #e9e9e9;text-align:left;font-size:14px}
+    th{background:#fff;font-weight:700}
+    .btn{display:inline-block;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:700}
+    .btn-red{background:var(--merah);color:#fff}
+    .btn-black{background:var(--hitam);color:#fff}
+    .small{font-size:13px;color:#555}
+    footer{margin:30px 0 50px 0;color:#444;font-size:13px;text-align:center}
+    .right-card{position:sticky;top:18px}
+    .field{margin-bottom:10px}
+    .link-list a{display:block;padding:8px 10px;border-radius:6px;background:#fff;margin-bottom:8px;text-decoration:none;color:var(--hitam);border:1px solid #eee;font-weight:600}
+    .logo-caption{font-size:12px;color:#666;margin-top:6px}
+    .badge{display:inline-block;padding:6px 9px;border-radius:20px;background:#111;color:#fff;font-size:12px;margin-left:8px}
+    .center{display:flex;gap:8px;align-items:center;justify-content:center}
+    .gallery{display:flex;flex-wrap:wrap;gap:10px}
+    .gallery img{width:calc(50% - 5px);border-radius:6px;border:1px solid #eee}
+    @media(max-width:600px){.gallery img{width:100%}}
+    .muted{color:#666;font-size:13px}
+    .note{background:#fff8f8;border-left:4px solid var(--merah);padding:10px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo MAN Insan Cendekia" />
+      </div>
+      <div>
+        <div class="site-title">Situs Informasi Upacara<br><span class="site-sub">MAN Insan Cendekia Lampung Timur</span></div>
+        <nav style="margin-top:10px">
+          <a class="nav-link" href="#beranda">Beranda</a>
+          <a class="nav-link" href="#jadwal">Jadwal</a>
+          <a class="nav-link" href="#petugas">Petugas</a>
+          <a class="nav-link" href="#formulir">Formulir & Pedoman</a>
+          <a class="nav-link" href="#galeri">Galeri</a>
+          <a class="nav-link" href="#kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="grid">
+        <section>
+          <h2 id="beranda">Beranda</h2>
+          <div class="card">
+            <p>Selamat datang di <strong>Situs Informasi Upacara</strong> MAN Insan Cendekia Lampung Timur. Situs ini memuat jadwal upacara, daftar petugas per minggu, formulir konfirmasi, dan pedoman pelaksanaan upacara untuk satu periode ajaran 2025/2026. Informasi diperbarui oleh anggota Bela Negara.</p>
+            <div style="margin-top:12px" class="note">
+              <strong>Pengumuman Terbaru:</strong>
+              <div class="small" style="margin-top:6px">Upacara Hari Pahlawan: <strong>Senin, 10 November 2025</strong> | 07.00 WIB | Lapangan di depan RKB. Petugas: ....</div>
+            </div>
+            <div style="margin-top:12px" class="center">
+              <a href="#jadwal" class="btn btn-red">Lihat Jadwal Lengkap</a>
+              <a href="#formulir" class="btn btn-black">Konfirmasi Petugas</a>
+            </div>
+          </div>
+
+          <h2 id="jadwal" style="margin-top:18px">Jadwal Upacara</h2>
+          <div class="card">
+            <table aria-label="Jadwal Upacara">
+              <thead>
+                <tr><th>No</th><th>Tanggal</th><th>Waktu</th><th>Tema</th><th>Petugas</th><th>Catatan</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>11 Nov 2025</td><td>07.00</td><td>Hari Pahlawan</td><td>XI IPA 1</td><td>Wajib hadir 06.45</td></tr>
+                <tr><td>2</td><td>18 Nov 2025</td><td>07.00</td><td>Disiplin & Tanggung Jawab</td><td>XI IPS 2</td><td>Siapkan perlengkapan</td></tr>
+                <tr><td>3</td><td>25 Nov 2025</td><td>07.00</td><td>Hari Guru Nasional</td><td>X IPA 3</td><td>Apresiasi Guru</td></tr>
+                <tr><td>4</td><td>02 Des 2025</td><td>07.00</td><td>Upacara Bulanan</td><td>XI IPA 2</td><td>-</td></tr>
+              </tbody>
+            </table>
+            <p class="muted" style="margin-top:10px">*Untuk mengubah jadwal atau menambah catatan, edit baris pada tabel atau hubungi admin.</p>
+          </div>
+
+<h2 id="petugas" style="margin-top:18px">Petugas Upacara</h2>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>Jabatan</th>
+        <th>Nama</th>
+        <th>Kelas</th>
+      </tr>
+    </thead>
+    <tbody id="petugas-body">
+      <tr>
+        <td colspan="3" style="text-align:center">Memuat data...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+// GANTI DENGAN URL CSV GOOGLE SHEETS-MU
+const petugasSheetUrl = "https://docs.google.com/spreadsheets/d/1Abc123.../export?format=csv";
+
+fetch(petugasSheetUrl)
+  .then(response => response.text())
+  .then(data => {
+    const lines = data.split('\n').slice(1); // lewati baris header
+    const tbody = document.getElementById('petugas-body');
+    tbody.innerHTML = ''; // hapus placeholder
+
+    lines.forEach(line => {
+      if (!line.trim()) return; // lewati baris kosong
+      const cols = line.split(',').map(col =>
+        col.replace(/^"(.*)"$/, '$1').trim() // hapus tanda kutip luar jika ada
+      );
+      if (cols.length < 3) return;
+
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${cols[0]}</td>
+        <td>${cols[1]}</td>
+        <td>${cols[2]}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  })
+  .catch(err => {
+    document.getElementById('petugas-body').innerHTML =
+      '<tr><td colspan="3" style="text-align:center;color:red">Gagal memuat data petugas.</td></tr>';
+  });
+</script>
+
+          <h2 id="formulir" style="margin-top:18px">Formulir & Pedoman</h2>
+          <div class="card link-list">
+            <a href="https://forms.gle/example-link" target="_blank">Form Konfirmasi Petugas Mingguan (Google Form)</a>
+            <a href="https://drive.google.com/file/d/example/view" target="_blank">Pedoman Pelaksanaan Upacara (PDF)</a>
+            <a href="https://drive.google.com/file/d/example2/view" target="_blank">Panduan Pelaksanaan Upacara (PDF)</a>
+          </div>
+
+          <h2 id="galeri" style="margin-top:18px">Galeri Dokumentasi</h2>
+          <div class="card">
+            <div class="gallery">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='400'><rect width='100%' height='100%' fill='%23eeeeee'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23999' font-size='20'>Foto Upacara (placeholder)</text></svg>" alt="foto1">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='400'><rect width='100%' height='100%' fill='%23eeeeee'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23999' font-size='20'>Foto Upacara (placeholder)</text></svg>" alt="foto2">
+            </div>
+            <p class="small" style="margin-top:10px">Embed folder Google Drive untuk koleksi foto agar mudah diupdate.</p>
+          </div>
+        </section>
+
+        <aside class="right-card">
+          <div class="card">
+            <h3 style="margin-top:0">Ringkasan</h3>
+            <p class="small">Situs ini dibuat untuk menampilkan jadwal upacara satu periode, daftar petugas, dan link formulir/pedoman.</p>
+            <div style="margin-top:12px">
+              <div class="field"><strong>Periode:</strong> 2025</div>
+              <div class="field"><strong>Pembaruan:</strong> Mingguan</div>
+              <div class="field"><strong>Admin:</strong> ANGGOTA BELA NEGARA</div>
+            </div>
+            <div style="margin-top:10px" class="center">
+              <a class="btn btn-red" href="#formulir">Buka Form</a>
+              <a class="btn btn-black" href="#kontak" style="margin-left:8px">Hubungi Admin</a>
+            </div>
+            <div style="margin-top:12px" class="logo-caption"></div>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3 style="margin-top:0">Catatan Admin</h3>
+            <p class="small">Simpan link Google Form dan Drive di satu folder admin. Backup responses Google Form ke Google Sheets.</p>
+            <div style="margin-top:8px" class="muted">Panduan singkat:</div>
+            <ol class="small">
+              <li>Update jadwal di halaman Jadwal.</li>
+              <li>Ganti link dummy ke link asli.</li>
+              <li>Berikan akses edit ke 1-2 admin OSIS.</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer id="kontak" class="container" style="max-width:var(--max-width)">
+      <div class="card">
+        <h2 style="margin-top:0">Kontak & Admin</h2>
+        <p class="small">Untuk pertanyaan atau pembaruan, hubungi:</p>
+        <p><strong>Email:</strong> osis.maniclt@gmail.com</p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/upacaramaniclt_official" target="_blank">@upacaramaniclt_official</a></p>
+        <p class="muted">Hak cipta &copy; MAN Insan Cendekia Lampung Timur - 2025</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
