@@ -136,44 +136,73 @@
     </thead>
     <tbody id="petugas-body">
       <tr>
-        <td colspan="3" style="text-align:center">Memuat data...</td>
+        <td>Pemimpin Upacara</td>
+        <td>Amsyar</td>
+        <td>XI D</td>
+      </tr>
+      <tr>
+        <td>Danton 1</td>
+        <td>Hafidz</td>
+        <td>XI D</td>
+      </tr>
+      <tr>
+        <td>Danton 2</td>
+        <td>Putra</td>
+        <td>XI D</td>
+      </tr>
+      <tr>
+        <td>Danton 3</td>
+        <td>Hasan</td>
+        <td>XI D</td>
+      </tr>
+      <tr>
+        <td>Danton 4</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Danton 5</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Danton 6</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>MC</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UUD</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>DOA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ajudan</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Pengibar</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Tambahan</td>
+        <td></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
 </div>
-
-<script>
-// GANTI DENGAN URL CSV GOOGLE SHEETS-MU
-const petugasSheetUrl = "https://docs.google.com/spreadsheets/d/1Abc123.../export?format=csv";
-
-fetch(petugasSheetUrl)
-  .then(response => response.text())
-  .then(data => {
-    const lines = data.split('\n').slice(1); // lewati baris header
-    const tbody = document.getElementById('petugas-body');
-    tbody.innerHTML = ''; // hapus placeholder
-
-    lines.forEach(line => {
-      if (!line.trim()) return; // lewati baris kosong
-      const cols = line.split(',').map(col =>
-        col.replace(/^"(.*)"$/, '$1').trim() // hapus tanda kutip luar jika ada
-      );
-      if (cols.length < 3) return;
-
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td>${cols[0]}</td>
-        <td>${cols[1]}</td>
-        <td>${cols[2]}</td>
-      `;
-      tbody.appendChild(tr);
-    });
-  })
-  .catch(err => {
-    document.getElementById('petugas-body').innerHTML =
-      '<tr><td colspan="3" style="text-align:center;color:red">Gagal memuat data petugas.</td></tr>';
-  });
-</script>
 
           <h2 id="formulir" style="margin-top:18px">Formulir & Pedoman</h2>
           <div class="card link-list">
